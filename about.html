@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jean Georges | New Tastes</title>
+    <meta name="author" content="Anuar Jimenez">
+    <meta name="author" content="Erich Hoss">
+    <meta name="description" content="Have an amazing time with us, all the food you always wished for is in the same place.">
+    <meta name="keywords" content="Restaurant,Food,Cafe,Instagram,PUB">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+    <header id="home" class="page-section" data-matching-link=#link-home>
+        <div class="header__navigation">
+            <div class="container header__container">
+                <div class="header__logo">
+                    <a href="#home" id="link-logo">
+                        <img class ="image" src="assets/img/jg-white-logo.png" alt="Jean Georges">
+                    </a>
+                </div>
+                <nav id="menu" class="header__menu">
+                    <!--It's going to be a responsive close button-->
+                    <i id="btn-menu-close" class="header__menu-exit fas fa-times"></i>
+                    <a href="#home" id="link-home">Home</a>
+                    <a href="about.html" id="link-about">About</a>
+                    <a href="services.html" id="link-services">Services</a>
+                    <a href="contact.html" id="link-contact">Contact</a>
+                </nav>
+                <!--It's going to be a responsive open button-->
+                <i id="btn-menu-open" class="header__toggle fas fa-bars"></i>
+            </div>
+        </div>
+        <picture>
+            <img class="header__background" srcset="assets/img/heroes/hero-about.jpg" alt="Jean Georges | Your new house." width="1300" height="900">
+        </picture>
+        <div id="banner-info" class="header__banner">
+            <h1 class="header__title">Jean Georges</h1>
+            <h2 class="header__subtitle">Food. First & Foremost</h2>
+            <a id="link-btn-about" class="btn btn--transparent btn--border-white" href="#">About Us</a>
+        </div>
+    </header>
+    <section class="landing-page">
+        <section class="media">
+            <figure>
+                <img src="assets/img/about/hall.jpg" alt="Jean Georges dining hall." width="500" height="300">
+                <figcaption>Fig.1 - Jean Georges' Dining Hall.</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/img/about/kitchen.png" alt="Jean Georges kitchen view." width="500" height="300">
+                <figcaption>Fig.2 Jean Georges' Kitchen.</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/img/about/kitchen-2.jpg" alt="Jean Georges kitchen with chef." width="500" height="300">
+                <figcaption>Fig.3 Jean Georges' Chef.</figcaption>
+            </figure>
+            <figure>
+                    <img src="assets/img/about/neon.png" alt="Jean Georges night view." width="300" height="500">
+                    <figcaption>Fig.4 Jean Georges' night view.</figcaption>
+            </figure>
+        </section>
+        <!-- Added figure and figcaptions to meet assignment specifications also height width attributes you may adjust this since you wanted to manage the image files-->
+        <section class="who-we-are">
+            <h4>WHO WE ARE</h4>
+            <p>
+                At Jean Georges we aim to give you the food
+                you want when you want it. Providing you with
+                different styles of food, and different feels in
+                our environment depending on the time of day.
+            </p>
+        </section>
+        <section class="our-history">
+                <h4>OUR HISTORY</h4>
+                <p>
+                    Jean Georges was an attempt to break into the resturaunt
+                    market by industry professionals who were unable to find 
+                    a resturaunt which could suit the needs of the many people 
+                    of New York. In 2015 the resturaunt was founded and since then
+                    Jean Georges has recieved critical acclaim as well as popularity
+                    with the busy people of New York.
+                </p>
+        </section>
+        <section class="our-quality">
+            <h4>OUR QUALITY</h4>
+            <p>
+                With hundreds of positive reviews and numerous
+                awards given to us, Jean Georges has a proven
+                reputation for both good service, and good food at 
+                any time of day. 
+            </p>
+            <a href="https://ny.eater.com/2017/12/5/16737770/best-new-york-restaurants-chefs-eater-awards-2017">NYC Eater Award Winner 2017.</a>
+        </section>
+        <!--Essentially filler sections except for history feel free to change, added external link to meet assignment criterea-->
+    </section>
+    <footer id="contact" class="page-section" data-matching-link="#link-contact">
+        <!--TO DO-->
+        <!--CHANGE SRC ATTRIBUTE FOR DATA-SRC IN ORDER TO USE LAZY LOAD-->
+        <img class="image lazyload" src="assets/img/footer.jpg" alt="Jean Georges, Food. First & Foremost" width="600" height="200">
+        <div class="footer__container">
+            <div class="footer__newsletter">
+                <p class="footer__title footer__title--updates">Receive Updates</p>
+                <form action="unknown.php">
+                    <!--Email input with regular expression for validating email characters-->
+                    <input class="footer__newsletter-email" type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    <!--Form will be sent through AJAX, there's no need for input submit-->
+                    <button class="btn btn-newsletter">Send</button>
+                </form>
+            </div>
+            <div class="footer__location">
+                <div class="footer__title">LOCATION</div>
+                <div class="footer__location-info">
+                    <p class="footer__text>">1 Central Park west</p>
+                    <p class="footer__text">New York</p>
+                    <p class="footer__text">NY 10234 USA</p>
+                </div>
+            </div>
+            <div class="footer__social">
+                <div class="footer__title">CONTACT</div>
+                <div class="footer__social-container">
+                    <!--TO DO-->
+                    <!--ADD SOCIAL MEDIA LINKS WHEN CREATED-->
+                    <a class="footer__social-icon facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="footer__social-icon twitter" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="footer__social-icon instagram" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="footer__social-icon youtube" href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

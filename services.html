@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jean Georges | New Tastes</title>
+    <meta name="author" content="Anuar Jimenez">
+    <meta name="author" content="Erich Hoss">
+    <meta name="description" content="Have an amazing time with us, all the food you always wished for is in the same place.">
+    <meta name="keywords" content="Restaurant,Food,Cafe,Instagram,PUB">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+    <header id="home" class="page-section" data-matching-link=#link-home>
+        <div class="header__navigation">
+            <div class="container header__container">
+                <div class="header__logo">
+                    <a href="#home" id="link-logo">
+                        <img class ="image" src="assets/img/jg-white-logo.png" alt="Jean Georges">
+                    </a>
+                </div>
+                <nav id="menu" class="header__menu">
+                    <!--It's going to be a responsive close button-->
+                    <i id="btn-menu-close" class="header__menu-exit fas fa-times"></i>
+                    <a href="#home" id="link-home">Home</a>
+                    <a href="about.html" id="link-about">About</a>
+                    <a href="services.html" id="link-services">Services</a>
+                    <a href="contact.html" id="link-contact">Contact</a>
+                </nav>
+                <!--It's going to be a responsive open button-->
+                <i id="btn-menu-open" class="header__toggle fas fa-bars"></i>
+            </div>
+        </div>
+        <picture>
+            <img class="header__background" srcset="assets/img/heroes/hero-services.jpg" alt="Jean Geroges | Your new house." width="1300" height="900">
+        </picture>
+        <div id="banner-info" class="header__banner">
+            <h1 class="header__title">Jean Georges</h1>
+            <h2 class="header__subtitle">Food. First & Foremost</h2>
+            <a id="link-btn-about" class="btn btn--transparent btn--border-white" href="#">About Us</a>
+        </div>
+    </header>
+    <section class="landing-page">
+        <section class="why-we-are-best">
+            <H4>OUR QUALITY</H4>
+            <p>
+                We offer the best quality ingredients in the city,
+                always fresh and replenished daily. Our chefs are 
+                highly trained and are willing to do whatever it takes
+                to meet your needs. Our staff is extremely personable and we
+                are rated as one of the highest resturants in the city for 
+                customer service and customer satisfaction.
+            </p>
+            <img src="assets/img/services/comment-medium.jpg" alt="Resturaunt interior" width="250" height="160">
+        </section>
+        <section class ="services">
+            <H4>OUR SERVICES </H4>
+            <p>
+                At Jean Georges we aim to suit your needs, which is why we offer
+                large group function services, as well as catering services for those 
+                who are not able to go to our location, but still want to enjoy our 
+                award winning food.
+            </p>
+        </section>
+        <section class="products">
+            <H4>SELECTIONS FROM OUR MENU</H4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selections of Jean Georges</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Appetizers</th>
+                    </tr>
+                    <tr>
+                        <td>Grilled Scallops</td>
+                    </tr>
+                    <tr>
+                        <td>Risotto Du Jour</td>
+                    </tr>
+                    <tr>
+                        <th>Main Courses</th>
+                    </tr>
+                    <tr>
+                        <td>Roasted Cod</td>
+                    </tr>
+                    <tr>
+                        <td>Aged Steak</td>
+                    </tr>
+                    <tr>
+                        <td>Grilled Seafood Jambalaya</td>
+                    </tr>
+                    <tr>
+                        <th>Desserts</th>
+                    </tr>
+                    <tr>
+                        <td>Banana Tres Leches</td>
+                    </tr>
+                    <tr>
+                         <td>Chocolate Pound Cake</td>
+                    </tr>
+                     <tr>
+                         <td>Mango Sorbet</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Made with the highest quality ingredients</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <img src="assets/img/services/comment-big.jpg" alt="Main course salmon meal" width="250" height="375">
+        <!--Added table to meet assignment specifications-->
+        </section>
+        <section class="video">
+            <h4>OUR ENVIRONMENT</h4>
+            <p>
+                Our resturaunt is located in the heart of New York
+                right by Central Park. Our location has been recently
+                updated and contains all the luxuries you would expect
+                from a high end resturaunt.
+            </p>
+        <!--TO DO-->
+        <!--Add a video file to this section-->
+        </section>
+        <!--Once again the text is just filler, attempted most of all to meet the assignment specs. Need to have two services our company offers-->
+    </section>
+    <footer id="contact" class="page-section" data-matching-link="#link-contact">
+        <!--TO DO-->
+        <!--CHANGE SRC ATTRIBUTE FOR DATA-SRC IN ORDER TO USE LAZY LOAD-->
+        <img class="image lazyload" src="assets/img/footer.jpg" alt="Jean Georges, Food. First & Foremost" width="600" height="200">
+        <div class="footer__container">
+            <div class="footer__newsletter">
+                <p class="footer__title footer__title--updates">Receive Updates</p>
+                <form action="unknown.php">
+                    <!--Email input with regular expression for validating email characters-->
+                    <input class="footer__newsletter-email" type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    <!--Form will be sent through AJAX, there's no need for input submit-->
+                    <button class="btn btn-newsletter">Send</button>
+                </form>
+            </div>
+            <div class="footer__location">
+                <div class="footer__title">LOCATION</div>
+                <div class="footer__location-info">
+                    <p class="footer__text>">1 Central Park west</p>
+                    <p class="footer__text">New York</p>
+                    <p class="footer__text">NY 10234 USA</p>
+                </div>
+            </div>
+            <div class="footer__social">
+                <div class="footer__title">CONTACT</div>
+                <div class="footer__social-container">
+                    <!--TO DO-->
+                    <!--ADD SOCIAL MEDIA LINKS WHEN CREATED-->
+                    <a class="footer__social-icon facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="footer__social-icon twitter" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="footer__social-icon instagram" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="footer__social-icon youtube" href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
