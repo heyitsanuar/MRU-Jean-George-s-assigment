@@ -1,0 +1,13 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    width: 80%;
+
+    @include atMedium{ max-width: 720px !important; }
+    @include atLarge{ max-width: 970px !important; }
+    @include atExtraLarge{ max-width: 1170px !important; }
+
+}
