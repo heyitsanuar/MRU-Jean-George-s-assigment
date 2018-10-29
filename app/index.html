@@ -11,6 +11,7 @@
     <meta name="keywords" content="Jean,Georges,Restaurant,Food,Cafe,Instagram,PUB">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
     
@@ -19,7 +20,7 @@
 <body>
     <header id="home" class="header page-section" data-matching-link="#link-home">
         <div class="header__navigation">
-            <div class="container header__container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="container header__container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
                 <div class="header__logo">
                     <a href="#home" id="link-logo">
                         <img class="image" src="assets/img/jg-white-logo.png" alt="Jean Georges" width="30" height="30">
@@ -27,7 +28,7 @@
                 </div>
                 <nav id="menu" class="header__menu">
                     <!--It's going to be a responsive close button -->
-                    <i id="btn-menu-close" class="header__menu-exit fas fa-times"></i>
+                    <i id="btn-menu-close" class="header__icon header__menu-exit fas fa-times"></i>
                     <ol>
                         <li><a href="#home" class="header__menu-item" id="link-home">Home</a></li>
                         <li><a href="about.html" class="header__menu-item" id="link-about">About</a></li>
@@ -36,7 +37,7 @@
                     </ol>
                 </nav>
                 <!--It's going to be a responsive open button -->
-                <i id="btn-menu-open" class="header__toggle fas fa-bars"></i>
+                <i id="btn-menu-open" class="header__icon fas fa-bars"></i>
             </div>
         </div>
         <picture>
