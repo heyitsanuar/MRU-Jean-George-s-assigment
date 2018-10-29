@@ -1,0 +1,23 @@
+.btn {
+    font-family: Arapey,sans-serif;
+    font-size: 1rem;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    padding: .625rem 3.125rem;
+    transition: all .3s ease;
+
+    &--transparent {
+        background: none;
+    }
+
+    &--border-white {
+        color: #fff;
+        border: 1px solid #ffffff;
+
+        &:hover{
+            background: rgba(255,255,255,0.8);
+            color: #1c1c1c;
+        }
+    }
+}
