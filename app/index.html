@@ -10,11 +10,17 @@
     <meta name="description" content="Have an amazing time with us, all the food you always wished is in the same place.">
     <meta name="keywords" content="Jean,Georges,Restaurant,Food,Cafe,Instagram,PUB">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    
+    <link rel="stylesheet" href="temp/css/styles.css">
 </head>
 <body>
-    <header id="home" class="page-section" data-matching-link="#link-home">
+    <header id="home" class="header page-section" data-matching-link="#link-home">
         <div class="header__navigation">
-            <div class="container header__container">
+            <div class="container header__container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
                 <div class="header__logo">
                     <a href="#home" id="link-logo">
                         <img class="image" src="assets/img/jg-white-logo.png" alt="Jean Georges" width="30" height="30">
@@ -22,20 +28,22 @@
                 </div>
                 <nav id="menu" class="header__menu">
                     <!--It's going to be a responsive close button -->
-                    <i id="btn-menu-close" class="header__menu-exit fas fa-times"></i>
+                    <i id="btn-menu-close" class="header__icon header__menu-exit fas fa-times"></i>
                     <ol>
-                        <li><a href="#home" id="link-home">Home</a></li>
-                        <li><a href="about.html" id="link-about">About</a></li>
-                        <li><a href="services.html" id="link-services">Services</a></li>
-                        <li><a href="contact.html" id="link-contact">Contact</a></li>
+                        <li><a href="#home" class="header__menu-item" id="link-home">Home</a></li>
+                        <li><a href="about.html" class="header__menu-item" id="link-about">About</a></li>
+                        <li><a href="services.html" class="header__menu-item" id="link-services">Services</a></li>
+                        <li><a href="contact.html" class="header__menu-item" id="link-contact">Contact</a></li>
                     </ol>
                 </nav>
                 <!--It's going to be a responsive open button -->
-                <i id="btn-menu-open" class="header__toggle fas fa-bars"></i>
+                <i id="btn-menu-open" class="header__icon fas fa-bars"></i>
             </div>
         </div>
         <picture>
-            <img class="header__background" srcset="assets/img/heroes/hero-home.jpg" alt="Jean Georges | Your new house." width="100%" height="805">
+            <source srcset="assets/img/heroes/hero-home-hq.jpg" media="(min-width: 992px)">
+            <source srcset="assets/img/heroes/hero-home-mq.jpg" media="(min-width: 768px)">
+            <img class="header__background" srcset="assets/img/heroes/hero-home-lq.jpg" alt="Jean Georges | Your new house.">
         </picture>
         <div id="banner-info" class="header__banner">
             <h1 class="header__title">Jean Georges</h1>
@@ -50,7 +58,7 @@
         </section>
         <section class="overview">
             <figure class="overview__video-box">
-                <img src="assets/img/home/video.jpg" alt="An amazing video is right here." width="477" height="260">
+                <img src="assets/img/home/video.jpg" alt="An amazing video is right here." width="100%">
                 <article class="overview__video-description">
                     <div class="border border--vertical b--black"></div>
                     <p>
