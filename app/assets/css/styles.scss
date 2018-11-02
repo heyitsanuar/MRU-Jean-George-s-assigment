@@ -1,6 +1,7 @@
 /* BASE MODULES */
 @import 'base/_mixins';
 @import 'base/_variables';
+@import 'base/_global';
 @import 'base/_normalize';
 @import 'base/_container';
 @import 'base/_flex';
@@ -11,5 +12,6 @@
 @import 'base/color';
 /* HEADER MODULES */
 @import 'modules/_btn';
+@import 'modules/_border';
 @import 'modules/title';
 @import 'modules/home';

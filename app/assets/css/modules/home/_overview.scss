@@ -1,0 +1,80 @@
+.overview {
+    position: relative;
+
+    @include atMedium {
+        height: 38.5rem;
+    }
+
+    &__video {
+        height: 50%;
+        
+        &-box {
+            transform: translateY(-15%);
+            height: 30rem;
+            box-shadow: 0 0 0.9375rem rgba(0,0,0,0.5);
+            
+            @include atMedium {
+                position: absolute;
+                top: -1.3125rem;
+                right: 2.875rem;
+                width: 19.8125rem;
+                height: 25.8125rem;
+                transform: translateY(-20%);
+            }
+            
+            @include atLarge {
+                transform: translateY(-50%);
+                right: 6.25rem;
+                height: 26.5625rem;
+                width: 18.75rem;
+            }
+            
+            @include atExtraLarge {
+                height: 35.3125rem;
+                width: 30.3125rem;
+            }
+        }
+
+        &-description {
+            display: flex;
+            align-items: center;
+            padding: 0.625rem 2.5rem 0 2.5rem;
+            background: #fff;
+
+            @include atSmall {
+                padding: 2.5rem 5.625rem 0 5.625rem;
+            }
+
+            @include atMedium {
+                padding: 1.25rem 1.25rem 0 1.25rem;
+            }
+
+            @include atLarge {
+                padding: 0.3125rem 2.5rem;
+            }
+            
+            @include atExtraLarge {
+                padding: 5rem 5rem 0 5rem;
+            }
+        }
+    }
+
+    &__title {
+        @include atMedium {
+            text-align: right;
+        }
+    }
+
+    &__info {
+        text-align: center;
+
+        @include atMedium {
+            text-align: left;
+            max-width: 15.625rem;
+        }
+
+        @include atLarge {
+            max-width: 23.75rem;        
+        }
+    }
+}

@@ -23,7 +23,7 @@
             <div class="container header__container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
                 <div class="header__logo">
                     <a href="#home" id="link-logo">
-                        <img class="image" src="assets/img/jg-white-logo.png" alt="Jean Georges" width="30" height="30">
+                        <img src="assets/img/jg-white-logo.png" alt="Jean Georges" width="30" height="30">
                     </a>
                 </div>
                 <nav id="menu" class="header__menu">
@@ -58,9 +58,9 @@
         </section>
         <section class="overview">
             <figure class="overview__video-box">
-                <img src="assets/img/home/video.jpg" alt="An amazing video is right here.">
+                <img class="overview__video image" src="assets/img/home/video.jpg" alt="An amazing video is right here.">
                 <article class="overview__video-description">
-                    <div class="border border--vertical b--black"></div>
+                    <div class="border border--vertical b--black" style="margin-right: 40px;"></div>
                     <p>
                         Our food and the environment are 
                         unique each ocassion you come up
@@ -70,15 +70,19 @@
                     </p>
                 </article>
             </figure>
-            <div class="border border--large b--yellow"></div>
-            <h2 class="overview__title title__separated title--medium ">JUST WHAT GOES WITH A GOOD TASTE</h2>
-            <div class="border border--large b--yellow"></div>
-            <p>
-                We've selected the best ingrediends, the quality
-                is something you don't have to be worried about,
-                we'll take care of it, you only relax a minute and
-                enjoy the best food in Calgary.
-            </p>
+            <div class="container d-flex align-center" style="height: 100%;">
+                <div class="overview__info">
+                    <div class="border border--horizontal border--large b--yellow"></div>
+                    <h2 class="overview__title title__separated title--medium my-15">JUST WHAT GOES WITH A GOOD TASTE</h2>
+                    <div class="border border--horizontal border--large b--yellow"></div>
+                    <p>
+                        We've selected the best ingrediends, the quality
+                        is something you don't have to be worried about,
+                        we'll take care of it, you only relax a minute and
+                        enjoy the best food in Calgary.
+                    </p>
+                </div>
+            </div>
         </section>
         <section class="food-facts">
             <article class="food-facts__info-box">

@@ -1,3 +1,8 @@
 .c {
-    &--white{ color: white; }
+    &--white { color: white; }
+}
+
+.b {
+    &--black { background: $mainBlack; }
+    &--yellow { background: #e27f1a; }
 }
