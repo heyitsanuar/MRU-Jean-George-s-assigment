@@ -1,0 +1,39 @@
+.flat-bread {
+    position: relative;
+
+    &__image {
+        height: 25rem;
+        width: 100%;
+        object-fit: cover;
+
+        @include atLarge {
+            height: 38.25rem;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        top: 3.75rem;
+        left: 40%;
+        max-width: 15.625rem;
+
+        @include atSmall {
+            left: 60%;
+        }
+
+        @include atMedium {
+            top: 3.125rem;
+            right: 3.125rem;
+        }
+
+        @include atLarge {
+            top: 5.625rem;
+            right: 6.25rem;
+            max-width: 25rem;
+        }
+
+        @include atExtraLarge {
+            right: 20.3125rem;
+        }
+    }
+}

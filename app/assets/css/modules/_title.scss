@@ -1,0 +1,17 @@
+.title {
+
+    &__separated {
+        font-family: 'Muli', sans-serif;
+        font-weight: bold;
+        transform: scaleX(.75);
+        letter-spacing: 0.25rem;
+    }
+
+    &--large {
+        font-size: rem;
+
+        @include atLarge {            
+            font-size: 2.75rem;
+        }
+    }
+}
