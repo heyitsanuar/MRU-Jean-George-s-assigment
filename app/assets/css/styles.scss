@@ -9,9 +9,10 @@
 @import 'base/_spacing';
 @import 'base/_text';
 @import 'base/_header';
-@import 'base/color';
+@import 'base/_footer';
+@import 'base/_color';
 /* HEADER MODULES */
 @import 'modules/_btn';
 @import 'modules/_border';
-@import 'modules/title';
-@import 'modules/home';
+@import 'modules/_title';
+@import 'modules/_home';
