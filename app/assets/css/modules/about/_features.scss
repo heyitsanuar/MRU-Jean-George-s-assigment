@@ -1,5 +1,23 @@
 .features {
     &__info {
-        max-width: 280px;
+        max-width: 17.5rem;
+        text-align: center;
+        margin-top: 1.875rem;
+        margin-bottom: 1.875rem;
+
+        @include atMedium {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &__image {
+        width: 100%;
+
+        @include atMedium {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
