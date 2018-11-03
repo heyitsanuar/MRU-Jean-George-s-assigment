@@ -37,4 +37,11 @@
             min-height: 2.75rem;
         }   
     }
+
+    &--contact {
+        border: none;
+        padding: 0.625rem 1.5625rem;
+        color: #fff;
+        background: $redWine;
+    }
 }

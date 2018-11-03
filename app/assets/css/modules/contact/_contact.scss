@@ -1,0 +1,27 @@
+.contact {
+    position: relative;
+    font-family: 'Arapey', serif;
+
+    &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        color: $redWine;
+        letter-spacing: 0.3125rem;
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__input {
+        background: rgba(240,240,240,0.7);
+        border: none;
+        padding: 0.625rem 1.875rem;
+    }
+}
