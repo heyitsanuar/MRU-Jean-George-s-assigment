@@ -1,0 +1,66 @@
+.menu {
+    &__title-food {
+        font-family: Muli,sans-serif;
+        font-size: 2.75rem;
+        letter-spacing: 4px;
+        text-align: center;
+        color: #e2e2e2;
+        margin: 0;
+        
+        @include atMedium {
+            font-size: 4.5rem;
+        }
+    }
+
+    &__title-container {
+        width: 80%;
+        margin: auto;
+        margin-top: 1.6875rem;
+
+        @include atMedium {
+            width: 32.8125rem;
+            margin-top: .9375rem;
+        }
+    }
+
+    &__frame {
+        width: 14.375rem;
+        height: 5.8125rem;
+        margin: auto;
+        background: #fff;
+        transform: translateY(-50%);
+    }
+
+    &__frame-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__title {
+        position: relative;
+        top: -4.875rem;
+        font-family: Sacramento,cursive;
+        font-size: 2.875rem;
+        text-align: center;
+    }
+
+    &__slogan {
+        font-family: Muli,sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+        color: #444;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 1.875rem;
+        transform: scaleX(.75);
+
+        @include atMedium {
+            margin-top: .83rem;
+            margin-bottom: 2.6875rem;
+        }
+
+        &--red {
+            color: #eb6060;
+        }
+    }
+}

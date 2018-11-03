@@ -1,0 +1,19 @@
+.intro {
+    &__satisfaction {
+        width: 80%;
+        margin: 4.875rem auto 0;
+        text-align: center;
+
+        @include atMedium {
+            width: 34.375rem;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 5.5rem;
+
+        @include atMedium {
+            margin-top: 7.5rem;
+        }
+    }
+}
