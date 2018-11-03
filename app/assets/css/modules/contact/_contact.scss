@@ -1,0 +1,37 @@
+.contact {
+    position: relative;
+    font-family: 'Arapey', serif;
+
+    &__container {
+        position: absolute;
+        transform: translateY(-100%);
+        padding: 6.25rem 0 6.25rem 3.125rem;
+        flex-wrap: wrap;
+
+        @include atMedium {
+            top: 50%;
+            left: 50%;
+            padding: 0;
+            transform: translate(-40%,-50%);
+        }
+
+        @include atLarge {
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    &__title {
+        color: $redWine;
+        letter-spacing: 0.3125rem;
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__input {
+        background: rgba(240,240,240,0.7);
+        border: none;
+        padding: 0.625rem 1.875rem;
+    }
+}
