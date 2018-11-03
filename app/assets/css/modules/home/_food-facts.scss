@@ -1,8 +1,8 @@
 .food-facts {
-    margin-top: -10.625rem;
+    display: none;
 
     @include atMedium {
-        margin-top: 0; 
+        display: block;
     }
 
     &__title {
@@ -43,5 +43,24 @@
             text-align: center;
         }
 
+    }
+
+    &__mobile {
+        @include atMedium {
+            display: none;
+        }
+    }
+
+    &__slider {
+        height: 100vh;
+        width: 100%;
+
+        @include atSmall {
+            height: 37.5rem;
+        }
+
+        @include atMedium{
+            display: none;
+        }
     }
 }

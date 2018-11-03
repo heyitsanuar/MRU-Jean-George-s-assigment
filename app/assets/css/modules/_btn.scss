@@ -20,4 +20,21 @@
             color: #1c1c1c;
         }
     }
+    
+    &--newlestter{
+        font-family: 'Muli', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #ffffff;
+        background: #F0932B;
+        border: none;
+        margin-top: 1.25rem;
+        min-height: 1.125rem;
+        min-width: 8.125rem;
+        
+        @include atExtraLarge{
+            min-width: 9.75rem;
+            min-height: 2.75rem;
+        }   
+    }
 }

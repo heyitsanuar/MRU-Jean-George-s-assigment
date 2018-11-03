@@ -1,0 +1,45 @@
+.fact {
+    padding-top: 5.625rem; 
+    text-align: center;
+
+    &__image {
+        height: 14.375rem;
+        width: 14.375rem;
+        text-align: center;
+    }
+
+    &__description {
+        max-width: 50%;
+        margin: 2.5rem auto;
+    }
+
+    &__buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__pointers {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+    }
+
+    &__started {
+        font-family: 'Muli', sans-serif;
+        font-weight: bold;
+        font-size: 0.875rem;
+        width: 50%;
+        background: $mainBlack;
+        color: #fff;
+        padding: 1.25rem 0;
+    }
+
+    &__point {
+        color: $mainBlack;
+
+        &--disabled {
+            color: #979797;
+        }
+    }
+}
