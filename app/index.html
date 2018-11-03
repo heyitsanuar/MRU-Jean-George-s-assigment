@@ -12,9 +12,10 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
+
     <link rel="stylesheet" href="temp/css/styles.css">
 </head>
 <body>
@@ -23,7 +24,7 @@
             <div class="container header__container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
                 <div class="header__logo">
                     <a href="#home" id="link-logo">
-                        <img class="image" src="assets/img/jg-white-logo.png" alt="Jean Georges" width="30" height="30">
+                        <img src="assets/img/jg-white-logo.png" alt="Jean Georges" width="30" height="30">
                     </a>
                 </div>
                 <nav id="menu" class="header__menu">
@@ -53,14 +54,14 @@
     </header>
     <section class="landing-page" id="landing-page">
         <section class="flat-bread">
-            <img src="assets/img/home/pizza-back.jpg" alt="Flat bread & Jean Georges are awesome." width="100%" height="612">
-            <h1 class="title__separated title--large c--white">EXACTLY WHAT YOU WERE LOOKING FOOR</h1>
+            <img class="flat-bread__image" src="assets/img/home/pizza-back.jpg" alt="Flat bread & Jean Georges are awesome." width="100%">
+            <h1 class="flat-bread__title title__separated title--large c--white">EXACTLY WHAT YOU WERE LOOKING FOR</h1>
         </section>
         <section class="overview">
             <figure class="overview__video-box">
-                <img src="assets/img/home/video.jpg" alt="An amazing video is right here." width="100%">
+                <img class="overview__video image" src="assets/img/home/video.jpg" alt="An amazing video is right here.">
                 <article class="overview__video-description">
-                    <div class="border border--vertical b--black"></div>
+                    <div class="border border--vertical b--black" style="margin-right: 40px;"></div>
                     <p>
                         Our food and the environment are 
                         unique each ocassion you come up
@@ -70,28 +71,35 @@
                     </p>
                 </article>
             </figure>
-            <div class="border border--large b--yellow"></div>
-            <h2 class="overview__title title__separated title--medium ">JUST WHAT GOES WITH A GOOD TASTE</h2>
-            <div class="border border--large b--yellow"></div>
-            <p>
-                We've selected the best ingrediends, the quality
-                is something you don't have to be worried about,
-                we'll take care of it, you only relax a minute and
-                enjoy the best food in Calgary.
-            </p>
+            <div class="container d-flex align-center" style="height: 100%;">
+                <div class="overview__info">
+                    <div class="border border--horizontal border--large b--yellow"></div>
+                    <h2 class="overview__title title__separated title--medium my-15">JUST WHAT GOES WITH A GOOD TASTE</h2>
+                    <div class="border border--horizontal border--large b--yellow"></div>
+                    <p>
+                        We've selected the best ingrediends, the quality
+                        is something you don't have to be worried about,
+                        we'll take care of it, you only relax a minute and
+                        enjoy the best food in Calgary.
+                    </p>
+                </div>
+            </div>
         </section>
         <section class="food-facts">
-            <article class="food-facts__info-box">
-                <h2 class="overview__title title__separated title--medium">GET TO KNOW OUR FOOD</h2>
-                <div class="border border--large b--yellow"></div>
-                <p>
-                    All of our food is original and unique,
-                    every second is a new adventure for you.
-                    Get to know our variety of food for all 
-                    kind of days, always satisfying your wishes.
-                </p>
-            </article>
-            <img src="assets/img/home/food-facts.jpg" alt="Here go some facts of our food." width="100%" height="1283">
+            <div class="container" style="position: relative;">
+                <article class="food-facts__info-box">
+                    <div class="border border--horizontal border--large b--yellow"></div>
+                    <h2 class="food-facts__title title__separated title--medium c--white">GET TO KNOW OUR FOOD</h2>
+                    <div class="border border--horizontal border--large b--yellow"></div>
+                    <p class="food-facts__info-text mt-5">
+                        All of our food is original and unique,
+                        every second is a new adventure for you.
+                        Get to know our variety of food for all 
+                        kind of days, always satisfying your wishes.
+                    </p>
+                </article>
+            </div>
+            <img class="image" src="assets/img/home/food-facts.jpg" alt="Here go some facts of our food.">
         </section>
     </section>
     <footer id="contact" class="page-section" data-matching-link="#link-contact">

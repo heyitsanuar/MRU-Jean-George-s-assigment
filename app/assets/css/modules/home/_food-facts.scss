@@ -1,0 +1,47 @@
+.food-facts {
+    margin-top: -10.625rem;
+
+    @include atMedium {
+        margin-top: 0; 
+    }
+
+    &__title {
+        margin: 0.9375rem auto;
+        max-width: 15.625rem;
+        text-align: center;
+    }
+
+    &__info {
+
+        &-box {
+            transform: translateY(70%);
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            width: 100%;
+            height: 23.4375rem;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            background: #811717;
+
+            @include atMedium {
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translateY(-20%);
+                width: 21.875rem;
+                padding-left: 5rem;
+                padding-right: 5rem;
+            }
+        }
+
+        &-text {
+            max-width: 15.625rem;
+            text-align: center;
+            color: #fff;
+            text-align: center;
+        }
+
+    }
+}
