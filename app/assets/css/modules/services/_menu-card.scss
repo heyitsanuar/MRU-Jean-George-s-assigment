@@ -1,0 +1,73 @@
+.menu-card {
+    position: relative;
+
+    &__content {
+        margin: 4.375rem 0;
+
+        @include atMedium {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            margin: 0;
+        }
+    }
+    
+    &__food-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &__title {
+        font-family: Muli,sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.125rem;
+        text-align: center;
+        color: #cccccc;
+        margin-bottom: 3.4375rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    &__background {
+        display: none;
+
+        @include atMedium {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__item {
+        display: flex;
+        width: 100%;
+        margin: 0.625rem 0;
+        
+        @include atMedium {
+            width: 50%;
+            margin: 0;
+        }
+
+        &-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            color: $mainBlack;
+        }
+
+        &-description {
+            font-size: 0.875rem;
+            color: #979797;
+        }
+
+        &-price {
+            font-family: 'Kaushan Script', cursive;
+            color: #c19a74;
+        }
+    }
+}
