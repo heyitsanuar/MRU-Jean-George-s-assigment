@@ -1,4 +1,3 @@
-/* BASE MODULES */
 @import 'base/_mixins';
 @import 'base/_variables';
 @import 'base/_global';
@@ -11,14 +10,4 @@
 @import 'base/_header';
 @import 'base/_footer';
 @import 'base/_color';
-/* HEADER MODULES */
-@import 'modules/_btn';
-@import 'modules/_border';
-@import 'modules/_title';
-@import 'modules/_list';
-@import 'modules/_menu';
-@import 'modules/_home';
-@import 'modules/_about';
-@import 'modules/_contact';
-@import 'modules/_services';
-@import 'modules/_image';
+@import 'base/_bar-social';

@@ -62,7 +62,6 @@ footer{
             margin: 0;
             margin-bottom: 1.75rem;
         }
-
     }
 
     &__text{
@@ -74,9 +73,10 @@ footer{
     }
 
     &__newlestter-email{
-        font-family: 'Muli', sans-serif;
+        /* Contact form uses a page specific font style which is different than the default font style defined for all pages */
+        font-family: 'Sacramento', cursive;
         font-size: 0.875rem;
-        color: #444444;
+        color: #1c1c1c;
         background: rgba(255, 255, 255, 0.5);
         border: none;
         width: 80%;
@@ -96,6 +96,11 @@ footer{
             padding: 0.9375rem 1.625rem;
         }
 
+        /* Style the require fields of your form differently (e.g., style required fields in red color, or add a red start beside the required field names.) */
+        &--required {
+            color: $redWine;
+            background: rgba(255, 255, 255, 0.9);
+        }
     }
 
     &__social-icon{

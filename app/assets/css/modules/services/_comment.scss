@@ -52,6 +52,11 @@
     &__description{
         color: $mainBlack;
         margin-left: 1.875rem;
+
+        /* Pseudo element selector is used */
+        &::first-line {
+            color: $instagram;
+        }
     }
 
     &__images{
