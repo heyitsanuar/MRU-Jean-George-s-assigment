@@ -1,0 +1,37 @@
+.bar-social {
+    display: none;
+
+    @include atMedium {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2000;    
+    }
+
+    &__link {
+        display: none;
+        
+        @include atMedium{
+            display: inline-block;
+            color: #fff;
+            padding: 15px 20px;
+            min-width: 18px;
+            text-align: center;
+            transition: all .3s ease;
+    
+            &:hover {
+                padding: 15px 30px;
+                background: $mainBlack;
+            }
+        }
+    }
+}
+
+.icon {
+    &-facebook{ background: $facebook; }
+    &-youtube{ background: $youtube; }
+    &-twitter{ background: $twitter; }
+    &-instagram{ background: $instagram; }
+}

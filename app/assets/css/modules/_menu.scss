@@ -59,7 +59,8 @@
             margin-bottom: 2.6875rem;
         }
 
-        &--red {
+        /* Contextual selector is used. */
+        span {
             color: #eb6060;
         }
     }

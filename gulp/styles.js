@@ -5,7 +5,7 @@ let gulp         = require('gulp'),
 
 gulp.task('styles', function(){
 
-  return gulp.src('./app/assets/css/styles.scss')
+  return gulp.src('./app/assets/css/*.scss')
       .pipe(sourceMaps.init())
       .pipe(autoprefixer())
       .pipe(sass({
