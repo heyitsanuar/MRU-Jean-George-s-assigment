@@ -16,4 +16,12 @@
             margin-top: 7.5rem;
         }
     }
+
+    /* Grid layout is used in one page to create a two dimensional layout. */
+    
+    &__grid {
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        grid-gap: 10px;
+    }
 }
