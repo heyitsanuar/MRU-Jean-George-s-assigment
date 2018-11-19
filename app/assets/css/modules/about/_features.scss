@@ -21,3 +21,11 @@
         }
     }
 }
+
+.order-sm-1{
+    order: 1;
+
+    @include atMedium {
+        order: 0;
+    }
+}

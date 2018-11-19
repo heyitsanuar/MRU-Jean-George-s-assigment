@@ -93,12 +93,8 @@
                     background: rgba(97,97,97,0.7);
                 }
 
-                /* In every page, the menu item of the current page must be styled with different color */
-                &.active,{
-                    &.home{ background: rgba(97,97,97,0.7); }
-                    &.about{ background: rgba($facebook,0.7); }
-                    &.services{ background: rgba(255,255,255,0.4); }
-                    &.contact{ background: rgba($instagram,0.7); }
+                &.active {
+                    background: rgba(255,255,255,0.4);
                 }
             }
         }
@@ -141,9 +137,7 @@
 
         }
 
-        /* It has a text layer with a transparent background color */
         @include atMedium {
-            background: rgba(0,0,0,0.5);
             transform: translateY(-40%);
         }
     }
