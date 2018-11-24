@@ -1,11 +1,11 @@
 import $ from 'jquery';
 import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
+import smothScroll from 'jquery-smooth-scroll';
 
 class Header {
     constructor() {
         this.btnMenuOpen = $("#btn-menu-open");
         this.btnMenuClose = $("#btn-menu-close");
-        this.banner = $("");
         this.menu = $("#menu");
 
         //Header change class elements
@@ -13,10 +13,10 @@ class Header {
         this.headerWaypointTrigger = $(".landing-page");
 
         //Page section elements both header and body
-        this.logo = $("");
-        this.btnAbout = $("");
+        this.linksHeader = $(".header__menu-item");
         
         this.createHeaderWaypoints();
+        this.addSmoothScrolling();
         this.events();
     }
 
@@ -45,6 +45,10 @@ class Header {
             },
             offset: "10%"
         });
+    }
+
+    addSmoothScrolling() {
+        this.linksHeader.smoothScroll();
     }
 }
 
