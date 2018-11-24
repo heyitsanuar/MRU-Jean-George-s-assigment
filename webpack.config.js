@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = {
 	entry: {
 		App: "./app/assets/js/App.js",
