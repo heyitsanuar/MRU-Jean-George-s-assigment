@@ -24,6 +24,7 @@
         width: 100%;
         padding: 1.875rem 0;
         z-index: 5000;
+        transition: all .5s ease;
 
         @include atMedium {
             padding: 1.25rem 0;

@@ -16,6 +16,7 @@ class Header {
         this.logo = $("");
         this.btnAbout = $("");
         
+        this.createHeaderWaypoints();
         this.events();
     }
 
@@ -27,6 +28,23 @@ class Header {
     showMenu() {
         this.menu.toggleClass("header__menu--is-toggled");
         this.btnMenuClose.toggleClass("header__menu-exit--is-visible");
+    }
+
+    //Creates waypoints for elements
+    createHeaderWaypoints() {
+        var thisPrev = this;
+
+        new Waypoint({
+            element: this.headerWaypointTrigger[0],
+            handler: function(direction) {
+                if(direction == "down"){
+                    thisPrev.header.addClass("header__navigation--scrolled");
+                }else{
+                    thisPrev.header.removeClass("header__navigation--scrolled");
+                }
+            },
+            offset: "10%"
+        });
     }
 }
 
