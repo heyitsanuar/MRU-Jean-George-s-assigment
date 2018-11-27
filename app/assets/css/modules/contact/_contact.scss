@@ -34,4 +34,15 @@
         border: none;
         padding: 0.625rem 1.875rem;
     }
+
+    &__background{
+        opacity: 0.4;
+        width: 100%;
+        min-height: 600px;
+        object-fit: cover;
+
+        @include atMedium {
+            opacity: 1;
+        }
+    }
 }
