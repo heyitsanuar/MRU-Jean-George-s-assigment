@@ -4,6 +4,7 @@ import smothScroll from 'jquery-smooth-scroll';
 
 class Header {
     constructor() {
+        //Collecting needed elements from DOM
         this.btnMenuOpen = $("#btn-menu-open");
         this.btnMenuClose = $("#btn-menu-close");
         this.menu = $("#menu");
@@ -15,6 +16,7 @@ class Header {
         //Page section elements both header and body
         this.linksHeader = $(".header__menu-item");
         
+        //Setting on required methods
         this.createHeaderWaypoints();
         this.addSmoothScrolling();
         this.events();
@@ -25,6 +27,7 @@ class Header {
         this.btnMenuClose.click(this.showMenu.bind(this));
     }
 
+    //MOBILE DEVICE: When pressing the buttons of the menu, it hides or is shown
     showMenu() {
         this.menu.toggleClass("header__menu--is-toggled");
         this.btnMenuClose.toggleClass("header__menu-exit--is-visible");
@@ -37,6 +40,7 @@ class Header {
         new Waypoint({
             element: this.headerWaypointTrigger[0],
             handler: function(direction) {
+                //Adding or removing a class which gives a color to the header depending on the scroll movement
                 if(direction == "down"){
                     thisPrev.header.addClass("header__navigation--scrolled");
                 }else{
@@ -47,6 +51,7 @@ class Header {
         });
     }
 
+    //Adds smooth scrolling when clicking on links
     addSmoothScrolling() {
         this.linksHeader.smoothScroll();
     }
