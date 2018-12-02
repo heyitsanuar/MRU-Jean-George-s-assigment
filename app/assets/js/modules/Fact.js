@@ -3,10 +3,12 @@ import $ from 'jquery';
 class Fact {
     
     constructor(){
+        //Collecting needed elements from DOM
         this.facts = $(".fact");
         this.backBtns = $(".fa-chevron-left:not(fact__point--disabled)");
         this.nextBtns = $(".fa-chevron-right:not(fact__point--disabled)");
 
+        //Setting on required methods
         this.events();
     }
     
